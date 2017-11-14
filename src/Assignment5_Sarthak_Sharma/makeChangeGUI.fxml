@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment5_Sarthak_Sharma.MakeChangeGUIController">
+    <stylesheets>
+        <URL value="@makechangegui.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="3.0" prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: 223;">
+         <children>
+            <FlowPane fx:id="fp" layoutX="98.0" layoutY="138.0" prefHeight="110.0" prefWidth="502.0" />
+            <FlowPane fx:id="fp2" layoutX="98.0" layoutY="264.0" prefHeight="110.0" prefWidth="502.0" />
+            <Label layoutY="157.0" text="Bills Needed:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="4.0" layoutY="86.0" prefHeight="17.0" prefWidth="91.0" text="Enter Amount:" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="SimHei" size="14.0" />
+               </font></Label>
+            <Label layoutX="5.0" layoutY="299.0" text="Coins Needed:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="label" layoutX="76.0" layoutY="108.0" prefHeight="17.0" prefWidth="395.0" />
+            <Label alignment="CENTER" layoutX="62.0" layoutY="21.0" prefHeight="17.0" prefWidth="428.0" text="Welcome to the make change program!" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="tamount" layoutX="119.0" layoutY="82.0" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="396.0" layoutY="24.0">
+         <children>
+            <Button fx:id="makeChange" mnemonicParsing="false" onAction="#makeChange" text="Make Change" textOverrun="WORD_ELLIPSIS" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Simplified Arabic" size="12.0" />
+               </font></Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
