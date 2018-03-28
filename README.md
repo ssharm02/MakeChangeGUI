@@ -5,3 +5,6 @@ User can enter amount between any dollar amount between 3 cents and 99 dollars, 
 
 Regular expression are implemented, only numbers can be entered in the text box
 ![alt text](https://i.imgur.com/cRMuGDO.gif)
+
+TODO: 
+Implement hashmaps to improve the make change algorithm
